@@ -1,0 +1,27 @@
+/* p{ */
+    /* font-size: 20px;
+    color: red;
+    font-weight: 900;
+    text-transform: capitalize;
+    text-decoration: underline;
+    font-style: italic; */
+    /* font-family: 'Courier New', Courier, monospace,sans-serif; */
+    /* letter-spacing: 200px; */
+    /* line-height: 100px; */
+    /* text-align: justify; */
+/* } */
+
+/* p:nth-child(1){
+    color: red;
+} */
+
+.text{
+    color: red;
+}
+#test{
+    color: green;
+}
+
+#mytest{
+    color: green;
+}
