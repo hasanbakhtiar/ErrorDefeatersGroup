@@ -1,0 +1,67 @@
+/* img{
+    float: right;
+    float: left;
+}
+
+h1{
+    clear: both;
+} */
+
+.main-box{
+    display: flex;
+    /* justify-content: space-between; */
+    /* justify-content: center; */
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
+    /* justify-content: flex-end; */
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+    /* flex-direction: row; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row-reverse; */
+    width: 90%;
+    height: 50vh;
+    border: 2px solid black;
+}
+.main-box .box{
+    width: 100px;
+    height: 100px;
+    /* background-color: red; */
+    /* hex  0123456789abcdef*/
+    /* min-3 max-8 6-color 2-opacity */
+    /* background-color: #123abc; */
+    /* min->0 max->f */
+    /* background-color:  rgb(100,30,100); */
+    /* min->0 max->255 */
+    /* rgb - red green blue */
+    /* background-color: rgba(red, green, blue, alpha); */
+    /* background-color: rgba(100,30,100, .5); */
+    /* background-color: hsl(huehue, saturation, lightness);
+    background-color: hsla(huehue, saturation, lightness,alpha);
+    background-color: hwb(hue white black); */
+    /* background-color: hsla(145, 94%, 45%, 0.772); */
+
+
+    /* 1em or 1rem = 16px */
+    
+    
+    /* font-size:10em; */
+    /* font-size:50px; */
+    color: white;
+    margin: 2px;
+    
+}
+
+/* html{
+    font-size: 100px;
+}
+
+h1{
+    font-size: 2rem;
+} */
+

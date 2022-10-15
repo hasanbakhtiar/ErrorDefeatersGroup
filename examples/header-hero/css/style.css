@@ -1,0 +1,73 @@
+body{
+    height: 200vh;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header .logo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+header nav{
+    width: 70%;
+}
+
+header nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header nav ul li{
+    list-style:none;
+}
+header nav ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    font-family: sans-serif;
+    font-weight: bolder;
+    border: 4px solid orange;
+    padding: 5px;
+    border-radius: 10px;
+    transition: .5s;
+}
+header nav ul li a:hover{
+    color: orange;
+    background-color: #000;
+}
+
+.hero{
+    width: 100%;
+    height: 90vh;
+    background-image: url('https://i.ytimg.com/vi/IUN664s7N-c/maxresdefault.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+.hero .hero-bg{
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(0,0,0,.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .hero-bg h1{
+    font-size: 100px;
+    color: #fff;
+}
