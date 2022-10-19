@@ -1,0 +1,32 @@
+header {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav {
+  width: 70%;
+}
+header nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul li a {
+  text-decoration: none;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: grey;
+}
+.hero h1 {
+  font-size: 100px;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
