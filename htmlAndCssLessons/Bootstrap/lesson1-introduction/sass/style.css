@@ -1,0 +1,12 @@
+.myprops {
+  color: red !important;
+}
+
+.main-box {
+  width: 100%;
+}
+.main-box .box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}/*# sourceMappingURL=style.css.map */
