@@ -1,0 +1,24 @@
+@media (max-width: 789px) {
+  header {
+    .bottom-nav {
+      .bottom-con {
+        justify-content: space-between;
+
+        ul {
+          display: none;
+        }
+        .menu {
+          display: block;
+        }
+      }
+    }
+  }
+  .cards {
+    .cards-con {
+      flex-direction: column;
+      .card-item {
+        width: 100%;
+      }
+    }
+  }
+}

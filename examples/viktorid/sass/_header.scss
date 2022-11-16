@@ -1,0 +1,65 @@
+header{
+    width: 100%;
+    height: 300px;
+    background-image:url('https://template.hasthemes.com/victorid/victorid/assets/images/bg/breadcrumb.webp');
+  
+    .top-nav{
+        width: 100%;
+        height: 30px;
+        background-color: rgba($color: #000000, $alpha: .7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .top-con{
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            .left{
+                a{
+                    margin-left: 30px;
+                    color: #fff;
+                }
+            }
+            .right{
+                display: flex;
+                i{
+                
+                    background-color: #fff;
+                    border-radius:50%;
+                    padding: 5px;
+                    margin-left: 10px;
+
+                }
+            }
+        }
+    }
+    .bottom-nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        .bottom-con{
+            width: 80%;
+            display: flex;
+            .logo{
+                width: 50%;
+            }
+            ul{
+                width: 50%;
+                display: flex;
+                justify-content: space-between;
+                li{
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 20px;
+                    }
+                }
+            }
+            button{
+                display: none;
+            }
+        }
+    }
+}

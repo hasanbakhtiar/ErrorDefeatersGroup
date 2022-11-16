@@ -1,0 +1,51 @@
+.cards{
+    padding: 50px 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .cards-con{
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .card-item{
+            margin-top: 20px;
+            width: 23%;
+            height: 400px;
+            background-image: url('https://template.hasthemes.com/victorid/victorid/assets/images/team/bg.webp');
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          .card-item-inner{
+            width: 80%;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                width: 100px;
+                border-radius: 50%;
+            }
+            p{
+                    text-align: center;
+            }
+            .icon{
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                i{
+                    background-color: #fff;
+                    padding: 10px;
+                    border-radius: 50%;
+                }
+
+            }
+          }
+        }
+    }
+}
