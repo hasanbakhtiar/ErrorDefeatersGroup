@@ -1,0 +1,17 @@
+[
+    {
+        "brand":"BMW",
+        "model":"X5",
+        "color":"white"
+    },
+    {
+        "brand":"Mercedes",
+        "model":"s500",
+        "color":"red"
+    },  
+    {
+        "brand":"Audi",
+        "model":"A5",
+        "color":"black"
+    }
+]

@@ -1,0 +1,17 @@
+<Car>
+      <item id="1">
+                <model>bmw</model>
+                <brand>x5</brand>
+                <color>white</color>
+      </item>  
+       <item id="2">
+                <model>mercedes</model>
+                <brand>s5</brand>
+                <color>black</color>
+      </item> 
+       <item id="3">
+                <model>audi</model>
+                <brand>a5</brand>
+                <color>dark</color>
+      </item> 
+</Car>
