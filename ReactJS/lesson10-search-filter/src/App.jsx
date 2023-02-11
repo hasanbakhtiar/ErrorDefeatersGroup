@@ -1,6 +1,6 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Col, Container, Row, Button, Card, Form, InputGroup } from 'react-bootstrap';
 import products from './data/products'
 
@@ -9,7 +9,7 @@ import products from './data/products'
 const App = () => {
   const [data,setData] = useState(products);
   const [value,setValue] = useState('');
-
+  const inputRef = useRef();
   useEffect(()=>{
     AOS.init({
       duration : 1000
@@ -26,15 +26,19 @@ const App = () => {
     <Container>
       <h1 className='text-center animate__animated animate__tada '>Products</h1>
 
+      <Form onSubmit={(e)=>{e.preventDefault();
+        setValue(inputRef.current.value)}}>
       <InputGroup className="mb-3 mb-5">
         <Form.Control
           placeholder="Search Products"
-          onChange={e=>{setValue(e.target.value)}}
+          ref={inputRef}
+         
         />
-        <Button variant="secondary">
+        <Button variant="secondary"  type="submit">
           Search
         </Button>
       </InputGroup>
+      </Form>
 
 
       <Button variant='primary' className='ms-2' onClick={()=>{filterResult("men's clothing")}}>Men</Button>
