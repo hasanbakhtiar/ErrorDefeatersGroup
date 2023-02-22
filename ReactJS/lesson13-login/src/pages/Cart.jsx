@@ -17,7 +17,7 @@ const Cart = () => {
             <th>Quantity</th>
             <th>Del</th>
           </tr>
-        </thead>npm install --save react-toastify
+        </thead>
         <tbody>
             
             {items.map((item,c)=>{

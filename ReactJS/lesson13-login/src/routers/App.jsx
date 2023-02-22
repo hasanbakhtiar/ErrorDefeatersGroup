@@ -3,6 +3,7 @@ import { Container } from "react-bootstrap";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { CartProvider } from "react-use-cart";
 import { WishlistProvider } from "react-use-wishlist";
+import Login from "../auth/Login";
 import Header from "../components/Header";
 import { ProductProvider } from "../context/ProductContext";
 import Cart from "../pages/Cart";
@@ -22,6 +23,7 @@ const App = () => {
                 <Route path="/" element={<Home />}></Route>
                 <Route path="/shop" element={<Shop />}></Route>
                 <Route path="/cart" element={<Cart />}></Route>
+                <Route path="/login" element={<Login />}></Route>
                 <Route path="/shop/:url" element={<ProductDetails />}></Route>
               </Routes>
             </Container>
