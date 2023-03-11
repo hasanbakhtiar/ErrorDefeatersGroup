@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap'
 import { connect } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import BlogForm from '../../../components/admin/BlogForm'
-import { editBlog } from '../../../manager/actions/blogAction'
+import { editBlog, removeBlog } from '../../../manager/actions/blogAction'
 
 const EditBlog = (props) => {
   const navigate = useNavigate();
@@ -19,7 +19,11 @@ const EditBlog = (props) => {
             }}
             />
             <div className=" mt-2 d-flex align-items-center justify-content-end">
-            <div className="col-9"><Button variant='danger'>Delete</Button></div>
+            <div className="col-9"><Button variant='danger'
+            onClick={()=>{props.dispatch(removeBlog({comingid:props.pvalue.id}))
+            navigate('/dashboard')
+          }
+            }>Delete</Button></div>
             </div>
     </div>
   )
