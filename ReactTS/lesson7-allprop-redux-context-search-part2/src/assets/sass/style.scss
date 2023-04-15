@@ -1,0 +1,16 @@
+html{
+    scroll-behavior: auto !important;
+}
+.light{
+    *{
+        background-color: #fff !important;
+        color: #000 !important;
+    }
+}
+
+.dark{
+    *{
+        background-color: #000 !important;
+        color: #fff !important;
+    }
+}
