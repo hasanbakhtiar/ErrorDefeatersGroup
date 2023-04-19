@@ -11,15 +11,15 @@ import Products from "./pages/Products";
 import { ProductProvider } from "./context/ProductContext";
 import ProductDetails from "./pages/ProductDetails";
 import Login from "./pages/Login";
-import {  ThemeModeProvider } from "./context/ThemeModeContext";
+import { ThemeModeProvider } from "./context/ThemeModeContext";
 import Footer from "./components/Footer";
+import { ThemeModeContext } from "./context/ThemeModeContext";
 
-const App:React.FC = () => {
+const Main: React.FC = () => {
+  const [theme] = useContext(ThemeModeContext);
+  
   return (
-    <BrowserRouter>
-    <ThemeModeProvider>
-      <div >
-    <ProductProvider>
+    <div className={theme}>
       <Header />
       <Container>
         <Routes>
@@ -33,9 +33,18 @@ const App:React.FC = () => {
           <Route path="/dashboard/edit/:id" element={<EditBlog />}></Route>
         </Routes>
       </Container>
-      <Footer/>
-      </ProductProvider>
-      </div>
+      <Footer />
+    </div>
+  );
+};
+
+const App: React.FC = () => {
+  return (
+    <BrowserRouter>
+      <ThemeModeProvider>
+        <ProductProvider>
+          <Main />
+        </ProductProvider>
       </ThemeModeProvider>
     </BrowserRouter>
   );
